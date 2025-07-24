@@ -29,3 +29,37 @@ Showcases projects, skills, and contact information with smooth animations and a
    ```sh
    npm install
    ```
+2. **Run the development server:**
+   ```sh
+   npm run dev
+   ```
+3. **Build for production:**
+   ```sh
+   npm run build
+   ```
+4. **Preview the production build:**
+   ```sh
+   npm run preview
+   ```
+
+## Folder Structure
+
+- `src/` – React components, styles, and main app logic
+- `public/assets/` – Fonts and images
+- `index.html` – Main HTML entry point
+
+## Customization
+
+- **Projects:** Edit `src/components/Projects.jsx` to add or update your projects.
+- **Skills:** Update icons and experience in `src/components/Skills.jsx`.
+- **Contact:** Configure EmailJS service/template IDs in `src/components/Contact.jsx`.
+- **Theme & Fonts:** Adjust colors and fonts in `src/index.css`.
+
+## License
+
+Font files are licensed under the SIL Open Font License.  
+Source code is MIT licensed.
+
+---
+
+Made with ❤️ by Juan Stevenson
