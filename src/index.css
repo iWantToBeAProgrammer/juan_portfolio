@@ -1,0 +1,96 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "one-dark-pro";
+  default: true; /* set as default */
+  prefersdark: true; /* set as default dark mode (prefers-color-scheme:dark) */
+  color-scheme: dark; /* color of browser-provided UI */
+
+ --color-base-100: oklch(0.2925 0.0157 264.3); /* #282c34 (bg-color) */
+  --color-base-200: oklch(0.2425 0.0157 264.3);
+  --color-base-300: oklch(0.1925 0.0157 264.3);
+  --color-base-content: oklch(0.7621 0.0202 262.99);
+
+  --color-primary: oklch(0.7304 0.1213 245.3); /* #61afef (blue) */
+  --color-primary-content: oklch(98% 0.01 260);
+
+  --color-secondary: oklch(0.6936 0.1635 318.21); /* #c678dd (magenta) */
+  --color-secondary-content: oklch(98% 0.01 300);
+
+  --color-accent: oklch(0.7231 0.0916 206.31); /* #56b6c2 (cyan) */
+  --color-accent-content: oklch(98% 0.01 200);
+
+  --color-neutral: oklch(40% 0.03 260); /* #5c6370 (comment-color) */
+  --color-neutral-content: oklch(90% 0.01 260);
+
+  --color-info: oklch(70% 0.2 260); /* similar to primary */
+  --color-info-content: oklch(98% 0.01 260);
+
+  --color-success: oklch(72% 0.22 140); /* #98c379 (green) */
+  --color-success-content: oklch(15% 0.01 140);
+
+  --color-warning: oklch(82% 0.18 100); /* #e5c07b (yellow) */
+  --color-warning-content: oklch(20% 0.02 100);
+
+  --color-error: oklch(60% 0.25 40); /* reddish tone for errors */
+  --color-error-content: oklch(98% 0.01 40);
+
+  /* border radius */
+  --radius-selector: 1rem;
+  --radius-field: 0.25rem;
+    --radius-box: 2rem;
+
+  /* base sizes */
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+
+  /* border size */
+  --border: 1px;
+
+  /* effects */
+  --depth: 1;
+  --noise: 0;
+}
+
+@font-face {
+  font-family: "josefin";
+  src: url("/assets/fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf");
+  font-weight: 100 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "inter";
+  src: url("/assets/fonts/InterInter-VariableFont_opsz,wght.ttf");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-josefin: "josefin", sans-serif; 
+  --font-inter: "inter", sans-serif; 
+}
+
+html, body {
+  scroll-behavior: "smooth";
+}
+
+h1 {
+  font-family: var(--font-josefin);
+}
+
+p {
+  font-family: var(--font-inter);
+}
+
+@keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+        
