@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Button from "./common/Button";
 import Divider from "./common/Divider";
 import Aos from "aos";

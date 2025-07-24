@@ -17,8 +17,7 @@ const About = () => {
           I'm a Full Stack Developer based in Jakarta, with a passion for
           building digital services and things I am interested in. I have a
           knack for all things launching products, from planning and designing
-          all the way to solving real-life problems with code. When not online,
-          I love to hang out with my camera and capture the beauty of the world.
+          all the way to solving real-life problems with code.
         </p>
       </div>
     </section>

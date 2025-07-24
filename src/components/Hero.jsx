@@ -1,6 +1,6 @@
 import Button from "./common/Button";
 import "../index.css";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Aos from "aos";
 
 const Hero = () => {
