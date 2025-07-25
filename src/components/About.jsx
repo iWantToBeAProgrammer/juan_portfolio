@@ -14,10 +14,14 @@ const About = () => {
         </h1>
         <Divider />
         <p className="text-md sm:text-xl mt-12">
-          I'm a Full Stack Developer based in Jakarta, with a passion for
-          building digital services and things I am interested in. I have a
-          knack for all things launching products, from planning and designing
-          all the way to solving real-life problems with code.
+          I'm Juan Stevenson, a computer science student from Semarang with over
+          3.5 years of experience in fullstack web development. I focus mostly
+          on frontend (Next.js, React) and backend (Laravel), and I'm currently
+          learning Supabase and Zustand to expand my skills. I’ve worked on team
+          projects like Dinacom and BTNG, and I also enjoy teaching beginners
+          how to code. I’m passionate about building web apps that solve real
+          problems, and my goal is to become a professional website developer
+          who’s always learning and improving.
         </p>
       </div>
     </section>

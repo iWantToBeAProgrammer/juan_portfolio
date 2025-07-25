@@ -61,34 +61,48 @@ const Contact = () => {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="bg-base-200 border-white/30 rounded-xl border px-8 py-12 w-full sm:w-1/2 mx-auto flex flex-col gap-6 mt-12 shadow-xl"
+        className="bg-base-200 border-white/30 rounded-xl border px-8 py-12 w-full sm:w-1/2 mx-auto flex flex-col mt-12 shadow-xl"
       >
         <div className="flex flex-col">
           <label className="label text-sm">Your Name</label>
           <input
+            pattern="[A-Za-z][A-Za-z0-9\-]*"
+            minlength="3"
+            maxlength="30"
+            required
             type="text"
-            className="input max-w-none w-full input-lg"
+            className="input max-w-none w-full input-lg validator"
             name="user_name"
             placeholder="Enter Your Name"
           />
         </div>
+        <p className="validator-hint">
+          Must be 3 to 30 characters
+          <br />
+          containing only letters, numbers or dash
+        </p>
 
         <div className="flex flex-col">
           <label className="label text-sm mt-2">Email Address</label>
           <input
-            type="text"
-            className="input max-w-none w-full input-lg"
+            required
+            type="email"
+            className="input max-w-none w-full input-lg validator"
             name="user_email"
             placeholder="Enter Your Email"
           />
+          <div className="validator-hint">Enter valid email address</div>
         </div>
         <div className="flex flex-col">
           <label className="label text-sm mt-2">Message</label>
           <textarea
-            className="textarea max-w-none w-full textarea-lg"
+            required
+            className="textarea max-w-none w-full textarea-lg validator"
             placeholder="Enter Your Message..."
+            minlength="3"
             name="message"
           ></textarea>
+          <div className="validator-hint">Must be at least 3 characters</div>
         </div>
         <button
           type="submit"
