@@ -25,12 +25,18 @@ const Card = ({
             ))}
         </div>
         <div className="card-actions justify-end mt-12">
-          <button className="btn rounded-xl bg-gradient-to-r from-primary to-accent text-base-100 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/30 transition-all duration-200 ease-in">
+          <a
+            href={demoLink || "#"}
+            className="btn rounded-xl bg-gradient-to-r from-primary to-accent text-base-100 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/30 transition-all duration-200 ease-in"
+          >
             Live Demo
-          </button>
-          <button className="btn rounded-xl btn-outline outline-white/30">
+          </a>
+          <a
+            href={githubLink || "#"}
+            className="btn rounded-xl btn-outline outline-white/30"
+          >
             GitHub
-          </button>
+          </a>
         </div>
       </div>
     </div>

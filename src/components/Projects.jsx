@@ -56,6 +56,7 @@ const Projects = () => {
               description={data.description}
               image={data.image}
               techStacks={data.techStacks}
+              demoLink={data.demoLink}
             />
           );
         })}
