@@ -59,7 +59,7 @@ const Hero = () => {
             >
               <div className="absolute inset-8 xl:inset-16 bg-radial from-secondary via-accent to-transparent rounded-full blur-2xl opacity-30 z-0 h-full w-full"></div>
               <img
-                src="/assets/images/hero.png"
+                src="/assets/images/hero.webp"
                 alt="profile"
                 className="relative z-10 rounded-xl w-full h-auto"
               />
@@ -74,7 +74,7 @@ const Hero = () => {
             {/* Right Card */}
             <div
               data-aos="fade-right"
-              className="animate-float right-card card shadow-2xl w-80 xl:w-96 px-2 rounded-2xl border border-white/30 mt-12 xl:mt-24 rotate-6 lg:rotate-10"
+              className="animate-float self-center right-card card shadow-2xl w-80 xl:w-96 px-2 rounded-2xl border border-white/30 mt-12 xl:mt-24 rotate-6 lg:rotate-10"
             >
               <div className="card-body flex flex-col justify-center items-center text-center p-4 xl:p-6">
                 <h2 className="card-title font-semibold text-white text-lg xl:text-xl">
@@ -97,7 +97,7 @@ const Hero = () => {
             >
               <div className="absolute inset-4 sm:inset-8 bg-radial from-secondary via-accent to-transparent rounded-full blur-2xl opacity-30 z-0 h-full w-full"></div>
               <img
-                src="/assets/images/hero.png"
+                src="/assets/images/hero.webp"
                 alt="profile"
                 className="relative z-10 rounded-xl w-full h-auto"
               />

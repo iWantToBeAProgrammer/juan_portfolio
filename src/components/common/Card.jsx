@@ -28,6 +28,7 @@ const Card = ({
           <a
             href={demoLink || "#"}
             className="btn rounded-xl bg-gradient-to-r from-primary to-accent text-base-100 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/30 transition-all duration-200 ease-in"
+            target="_blank"
           >
             Live Demo
           </a>
