@@ -50,6 +50,16 @@ const Skills = () => {
     <i className="devicon-mysql-plain"></i>,
   ];
 
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/assets/documents/juanstevenson_cv.pdf"; // Adjust the path as necessary
+    link.download = "juanstevenson_cv.pdf"; // The name of the downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    alert("CV downloaded successfully!");
+  };
+
   return (
     <section id="skills" className="w-full mx-auto text-center px-8 sm:px-32">
       <h1 className="text-2xl sm:text-5xl text-white font-semibold">
@@ -73,7 +83,7 @@ const Skills = () => {
         })}
         <div className="experience-card sm:row-span-2 col-span-2 sm:col-span-2 sm:ms-3 flex items-center justify-center flex-col sm:py-0 py-8 sm:px-4 bg-base-300 rounded-2xl">
           <h1 className="text-5xl sm:text-7xl bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
-            4+
+            3+
           </h1>
           <h2 className="text-xl sm:text-2xl text-white">
             Years of Experience
@@ -81,7 +91,7 @@ const Skills = () => {
           <p className="text-lg sm:text-xl text-white/50 mb-8 sm:mb-16">
             in web development
           </p>
-          <Button text={"Download my CV"} />
+          <Button text={"Download my CV"} onClick={handleDownload} />
         </div>
       </div>
 
@@ -89,7 +99,9 @@ const Skills = () => {
         data-aos="fade-left"
         className="additional-skills rounded-2xl mt-32 w-full flex flex-col justify-center items-center px-12 py-8 border border-white/30 bg-gradient-to-r from-base-100 via-base-200 to-base-300"
       >
-        <h1 className="text-2xl sm:text-5xl text-white font-semibold">Additional Skills</h1>
+        <h1 className="text-2xl sm:text-5xl text-white font-semibold">
+          Additional Skills
+        </h1>
         <Divider />
 
         <div className="skills-wrapper flex items-center flex-wrap justify-center gap-12 mt-12">
