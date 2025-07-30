@@ -12,11 +12,11 @@ const Card = ({
         <img src={image} alt={title} />
       </figure>
       <div className="card-body">
-        <h2 className="card-title  text-white font-semibold text-2xl">
+        <h2 className="card-title text-white font-semibold text-2xl">
           {title}
         </h2>
         <p>{description}</p>
-        <div className="flex gap-2">
+        <div className="flex gap-2 flex-wrap">
           {techStacks &&
             techStacks.map((techStack, key) => (
               <div className="badge badge-[#21252b] text-white" key={key}>
@@ -29,12 +29,14 @@ const Card = ({
             href={demoLink || "#"}
             className="btn rounded-xl bg-gradient-to-r from-primary to-accent text-base-100 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/30 transition-all duration-200 ease-in"
             target="_blank"
+            disabled={!demoLink}
           >
-            Live Demo
+            {demoLink ? "Live Demo" : "Demo Unavailable"}
           </a>
           <a
             href={githubLink || "#"}
             className="btn rounded-xl btn-outline outline-white/30"
+            disabled={!githubLink}
           >
             GitHub
           </a>
